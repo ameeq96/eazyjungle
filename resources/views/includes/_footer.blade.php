@@ -71,9 +71,9 @@
                              <div class="footer-nav-wrap text-white">
                                  <h4 class="text-white">QUICK LINKS</h4>
                                  <ul class="nav flex-column">
-                                     <li class="nav-item">
+                                     {{-- <li class="nav-item">
                                          <a class="nav-link" href="{{ route('services') }}">Our Services</a>
-                                     </li>
+                                     </li> --}}
                                      <li class="nav-item">
                                          <a class="nav-link" href="{{ route('contact-us') }}">Pricing</a>
                                      </li>

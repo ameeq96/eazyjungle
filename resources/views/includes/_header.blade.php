@@ -65,9 +65,9 @@
                              <a class="nav-link custom-nav-link" href="{{ url('/') }}">Home</a>
                          </li>
 
-                         <li class="nav-item custom-nav-item" data-position="left">
+                         {{-- <li class="nav-item custom-nav-item" data-position="left">
                              <a class="nav-link custom-nav-link" href="{{ route('services') }}">Our Services</a>
-                         </li>
+                         </li> --}}
                          <li class="nav-item custom-nav-item" data-position="left">
                              <a class="nav-link custom-nav-link" href="{{ route('pricing') }}">Pricing</a>
                          </li>
