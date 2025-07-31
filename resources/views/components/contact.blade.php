@@ -42,20 +42,19 @@
                     <h2>Looking for a excellent Business idea?</h2>
                     <p class="lead">Seamlessly deliver pandemic e-services and next-generation initiatives.</p>
 
-                    <a href="#" class="btn outline-btn align-items-center">Get Directions <span
-                            class="ti-arrow-right ps-2"></span></a>
+                    {{-- <a href="#" class="btn outline-btn align-items-center">Get Directions <span
+                            class="ti-arrow-right ps-2"></span></a> --}}
 
                     <hr class="my-5">
 
                     <h5>Our Headquarters</h5>
                     <address>
-                        100 Yellow House, Mn <br>
-                        Factory, United State, 13420
+                        Saskatchewan Canada
                     </address>
-                    <br>
-                    <span>Phone: +1234567890123</span> <br>
-                    <span>Email: <a href="mailto:email@yourdomain.com"
-                            class="link-color text-decoration-none">email@yourdomain.com</a></span>
+                   
+                    <span>Phone: +923122114325</span> <br>
+                    <span>Email: <a href="mailto:support@eazyjungle.pk"
+                            class="link-color text-decoration-none">support@eazyjungle.pk</a></span>
 
                 </div>
             </div>

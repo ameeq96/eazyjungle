@@ -10,12 +10,12 @@
             <!--hero section end-->
 
             <!--promo-section section start-->
-            @include('components.promo-section', [
+            {{-- @include('components.promo-section', [
                 'title' => 'EazyJungle Helps You Succeed',
                 'subtitle' =>
                     'Grow your website faster by using EazyJungle as your foundation. Dynamically streamline principle-centered technologies.',
                 'align' => 'center',
-            ])
+            ]) --}}
             <!--promo-section section end-->
 
             <!--services section start-->
@@ -23,19 +23,15 @@
             <!--services section end-->
 
             <!--call to action section start-->
-            @include('components.call-to-action', [
-                'title' => 'Need Some Help?',
-                'description' =>
-                    'Whether you’re stuck or just want some tips on where to start, hit up our experts anytime. Sales Chat: MON-FRI 8AM-4PM PT | Customer Support Chat: Every Day 5:30AM–9:30PM PT',
-            ])
+            @include('components.call-to-action')
             <!--call to action section end-->
 
             <!--pricing with switch section start-->
-            @include('components.pricing')
+            {{-- @include('components.pricing') --}}
             <!--pricing with switch section end-->
 
             <!--feature section start-->
-            <x-feature-section :grayBg="true" />
+            {{-- <x-feature-section :grayBg="true" /> --}}
             <!--feature section end-->
 
             <!--faq section start-->

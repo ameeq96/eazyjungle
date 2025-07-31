@@ -8,28 +8,28 @@
                      <div class="topbar-text d-none d-md-block d-lg-block">
                          <ul class="list-inline">
                              <li class="list-inline-item">
-                                 <a href="tel:888-1234567"
-                                     class="d-flex align-items-center gap-2 text-decoration-none"><span
-                                         class="fas fa-phone mr-2"></span> 24x7 Technical
-                                     Support 888-1234567</a>
+                                 <a href="mailto:support@eazyjungle.pk"
+                                     class="d-flex align-items-center gap-2 text-decoration-none">
+                                     <span class="fas fa-envelope mr-2"></span> support@eazyjungle.pk
+                                 </a>
                              </li>
-                             <li class="list-inline-item"><a href="#"
-                                     class="d-flex align-items-center gap-2 text-decoration-none"><span
-                                         class="fas fa-comments mr-2"></span> Live
-                                     Chat</a></li>
                          </ul>
                      </div>
                  </div>
                  <div class="col-md-4 col-lg-4">
                      <div class="topbar-text">
                          <ul class="list-inline text-end">
-                             <li class="list-inline-item"><a
-                                     class="d-flex align-items-center gap-2 text-decoration-none"
-                                     href="{{ route('login') }}"><span class="fas fa-user mr-2"></span> Login</a>
+                             <li class="list-inline-item">
+                                 <a class="d-flex align-items-center gap-2 text-decoration-none"
+                                     href="https://eazyjungle.com/ezclient/index.php?fuse=home&view=login">
+                                     <span class="fas fa-user mr-2"></span> Login
+                                 </a>
                              </li>
-                             <li class="list-inline-item"><a
-                                     class="d-flex align-items-center gap-2 text-decoration-none"
-                                     href="{{ route('signup') }}"><span class="fas fa-lock mr-2"></span> Register</a>
+                             <li class="list-inline-item">
+                                 <a class="d-flex align-items-center gap-2 text-decoration-none"
+                                     href="https://eazyjungle.com/ezclient/index.php?fuse=home&view=register">
+                                     <span class="fas fa-lock mr-2"></span> Register
+                                 </a>
                              </li>
                          </ul>
                      </div>
@@ -37,6 +37,7 @@
              </div>
          </div>
      </div>
+
      <!--topbar end-->
 
      <!--main header menu start-->
@@ -65,16 +66,156 @@
                              <a class="nav-link custom-nav-link" href="{{ url('/') }}">Home</a>
                          </li>
 
-                         {{-- <li class="nav-item custom-nav-item" data-position="left">
-                             <a class="nav-link custom-nav-link" href="{{ route('services') }}">Our Services</a>
-                         </li> --}}
                          <li class="nav-item custom-nav-item" data-position="left">
+                             <a class="nav-link custom-nav-link" href="{{ route('about-us') }}">About Us</a>
+                         </li>
+                         {{-- <li class="nav-item custom-nav-item" data-position="left">
                              <a class="nav-link custom-nav-link" href="{{ route('pricing') }}">Pricing</a>
+                         </li> --}}
+
+                         <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="720px"
+                             data-position="right">
+                             <a id="servicesMegaMenu" class="nav-link custom-nav-link main-link-toggle"
+                                 href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">Services</a>
+
+                             <!-- Services Mega Menu -->
+                             <div class="hs-mega-menu w-100 main-sub-menu" aria-labelledby="servicesMegaMenu">
+                                 <div class="row no-gutters">
+                                     <div class="col-md-6">
+                                         <!-- Business Model Development -->
+                                         <div class="title-with-icon-item">
+                                             <a class="title-with-icon-link text-decoration-none" href="{{route("business-development")}}">
+                                                 <div class="media d-flex gap-2">
+                                                     <div class="menu-item-icon"><i class="fas fa-project-diagram"></i>
+                                                     </div>
+                                                     <div class="media-body">
+                                                         <span class="u-header__promo-title">Business Model
+                                                             Development</span>
+                                                         <small class="u-header__promo-text">Plan & structure your
+                                                             business ideas</small>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+
+                                         <!-- E-commerce Platform Development -->
+                                         <div class="title-with-icon-item">
+                                             <a class="title-with-icon-link text-decoration-none" href="{{route("ecommerce-solutions")}}">
+                                                 <div class="media d-flex gap-2">
+                                                     <div class="menu-item-icon"><i class="fas fa-store"></i></div>
+                                                     <div class="media-body">
+                                                         <span class="u-header__promo-title">E-Commerce Platform
+                                                             Development</span>
+                                                         <small class="u-header__promo-text">Build stores with content
+                                                             & management</small>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+
+                                         <!-- Website Design & Optimization -->
+                                         <div class="title-with-icon-item">
+                                             <a class="title-with-icon-link text-decoration-none" href="{{route("web-development")}}">
+                                                 <div class="media d-flex gap-2">
+                                                     <div class="menu-item-icon"><i class="fas fa-laptop-code"></i>
+                                                     </div>
+                                                     <div class="media-body">
+                                                         <span class="u-header__promo-title">Website Design &
+                                                             Optimization</span>
+                                                         <small class="u-header__promo-text">Modern, fast, and
+                                                             optimized websites</small>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+
+                                         <!-- Hosting Solutions -->
+                                         <div class="title-with-icon-item">
+                                             <a class="title-with-icon-link text-decoration-none" href="{{route("website-hosting-solutions")}}">
+                                                 <div class="media d-flex gap-2">
+                                                     <div class="menu-item-icon"><i class="fas fa-server"></i></div>
+                                                     <div class="media-body">
+                                                         <span class="u-header__promo-title">Website Hosting
+                                                             Solutions</span>
+                                                         <small class="u-header__promo-text">Reliable and secure
+                                                             hosting</small>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                     </div>
+
+                                     <div class="col-md-6">
+                                         <!-- Domain Registration -->
+                                         <div class="title-with-icon-item">
+                                             <a class="title-with-icon-link text-decoration-none" href="{{route("domain-registration")}}">
+                                                 <div class="media d-flex gap-2">
+                                                     <div class="menu-item-icon"><i class="fas fa-globe"></i></div>
+                                                     <div class="media-body">
+                                                         <span class="u-header__promo-title">Domain Registration &
+                                                             Management</span>
+                                                         <small class="u-header__promo-text">Secure your web
+                                                             identity</small>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+
+                                         <!-- Cybersecurity Solutions -->
+                                         <div class="title-with-icon-item">
+                                             <a class="title-with-icon-link text-decoration-none" href="{{route("cyber-security-solutions")}}">
+                                                 <div class="media d-flex gap-2">
+                                                     <div class="menu-item-icon"><i class="fas fa-shield-alt"></i>
+                                                     </div>
+                                                     <div class="media-body">
+                                                         <span class="u-header__promo-title">Cyber Security
+                                                             Solutions</span>
+                                                         <small class="u-header__promo-text">SSL & protection
+                                                             services</small>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+
+                                         <!-- Client Management Systems -->
+                                         <div class="title-with-icon-item">
+                                             <a class="title-with-icon-link text-decoration-none" href="{{route("computing-and-client-management")}}">
+                                                 <div class="media d-flex gap-2">
+                                                     <div class="menu-item-icon"><i class="fas fa-network-wired"></i>
+                                                     </div>
+                                                     <div class="media-body">
+                                                         <span class="u-header__promo-title">Computing & Client
+                                                             Management</span>
+                                                         <small class="u-header__promo-text">Smart solutions for your
+                                                             workflow</small>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+
+                                         <!-- Training & Testing -->
+                                         <div class="title-with-icon-item">
+                                             <a class="title-with-icon-link text-decoration-none" href="{{route("training-and-testing-solutions")}}">
+                                                 <div class="media d-flex gap-2">
+                                                     <div class="menu-item-icon"><i
+                                                             class="fas fa-chalkboard-teacher"></i></div>
+                                                     <div class="media-body">
+                                                         <span class="u-header__promo-title">Training & Testing
+                                                             Solutions</span>
+                                                         <small class="u-header__promo-text">Upskill with customized
+                                                             programs</small>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <!-- End Services Mega Menu -->
                          </li>
 
-
                          <!--hosting start-->
-                         <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="720px"
+                         {{-- <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="720px"
                              data-position="right">
                              <a id="hostingMegaMenu" class="nav-link custom-nav-link main-link-toggle"
                                  href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">Hosting</a>
@@ -219,157 +360,15 @@
                                  </div>
                              </div>
                              <!-- End Demos - Mega Menu -->
-                         </li>
+                         </li> --}}
                          <!--hosting end-->
 
-                         <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="720px"
-                             data-position="right">
-                             <a id="servicesMegaMenu" class="nav-link custom-nav-link main-link-toggle"
-                                 href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">Services</a>
-
-                             <!-- Services Mega Menu -->
-                             <div class="hs-mega-menu w-100 main-sub-menu" aria-labelledby="servicesMegaMenu">
-                                 <div class="row no-gutters">
-                                     <div class="col-md-6">
-                                         <!-- Web Development -->
-                                         <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('web-development') }}">
-                                                 <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-code"></i></div>
-                                                     <div class="media-body">
-                                                         <span class="u-header__promo-title">Web Development</span>
-                                                         <small class="u-header__promo-text">Custom websites
-                                                             to your business</small>
-                                                     </div>
-                                                 </div>
-                                             </a>
-                                         </div>
-
-                                         <!-- App Development -->
-                                         <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('app-development') }}">
-                                                 <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-mobile-alt"></i>
-                                                     </div>
-                                                     <div class="media-body">
-                                                         <span class="u-header__promo-title">App Development <span
-                                                                 class="badge bg-success ml-1">Popular</span></span>
-                                                         <small class="u-header__promo-text">Android & iOS apps that
-                                                             scale</small>
-                                                     </div>
-                                                 </div>
-                                             </a>
-                                         </div>
-
-                                         <!-- UI/UX Design -->
-                                         <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('ui-ux-design') }}">
-                                                 <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-pencil-ruler"></i>
-                                                     </div>
-                                                     <div class="media-body">
-                                                         <span class="u-header__promo-title">UI/UX Design</span>
-                                                         <small class="u-header__promo-text">Designs that delight and
-                                                             engage users</small>
-                                                     </div>
-                                                 </div>
-                                             </a>
-                                         </div>
-
-                                         <!-- SEO Services -->
-                                         <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('seo-services') }}">
-                                                 <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-search-dollar"></i>
-                                                     </div>
-                                                     <div class="media-body">
-                                                         <span class="u-header__promo-title">SEO Services</span>
-                                                         <small class="u-header__promo-text">Rank higher, get more
-                                                             traffic</small>
-                                                     </div>
-                                                 </div>
-                                             </a>
-                                         </div>
-                                     </div>
-
-                                     <div class="col-md-6">
-                                         <!-- Graphic Design -->
-                                         <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('graphic-design') }}">
-                                                 <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-palette"></i></div>
-                                                     <div class="media-body">
-                                                         <span class="u-header__promo-title">Graphic Design</span>
-                                                         <small class="u-header__promo-text">Eye-catching visuals &
-                                                             branding</small>
-                                                     </div>
-                                                 </div>
-                                             </a>
-                                         </div>
-
-                                         <!-- E-Commerce Solutions -->
-                                         <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('ecommerce-solutions') }}">
-                                                 <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-shopping-cart"></i>
-                                                     </div>
-                                                     <div class="media-body">
-                                                         <span class="u-header__promo-title">E-Commerce
-                                                             Solutions</span>
-                                                         <small class="u-header__promo-text">Sell online with ease and
-                                                             flexibility</small>
-                                                     </div>
-                                                 </div>
-                                             </a>
-                                         </div>
-
-                                         <!-- Maintenance & Support -->
-                                         <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('maintenance-support') }}">
-                                                 <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-tools"></i></div>
-                                                     <div class="media-body">
-                                                         <span class="u-header__promo-title">Maintenance &
-                                                             Support</span>
-                                                         <small class="u-header__promo-text">Reliable help when you
-                                                             need it</small>
-                                                     </div>
-                                                 </div>
-                                             </a>
-                                         </div>
-
-                                         <!-- Custom Solutions -->
-                                         <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('custom-solutions') }}">
-                                                 <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-lightbulb"></i>
-                                                     </div>
-                                                     <div class="media-body">
-                                                         <span class="u-header__promo-title">Custom Solutions <span
-                                                                 class="badge badge-primary ml-1">New</span></span>
-                                                         <small class="u-header__promo-text">Unique builds for unique
-                                                             needs</small>
-                                                     </div>
-                                                 </div>
-                                             </a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                             <!-- End Services Mega Menu -->
+                         <li class="nav-item custom-nav-item" data-position="left">
+                             <a class="nav-link custom-nav-link" href="#">Blogs</a>
                          </li>
 
-
                          <!--about start-->
-                         <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px"
+                         {{-- <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px"
                              data-position="right">
                              <a id="aboutMegaMenu" class="nav-link custom-nav-link main-link-toggle"
                                  href="JavaScript:Void(0);" aria-haspopup="true" aria-expanded="false">About</a>
@@ -413,14 +412,14 @@
                                  <!--menu title with subtitle and icon item end-->
                              </div>
                              <!--about submenu end-->
-                         </li>
+                         </li> --}}
                          <!--about end-->
 
                          <!--button start-->
                          <li class="nav-item header-nav-last-item d-flex align-items-center">
                              <a class="btn primary-solid-btn animated-btn" href="{{ route('contact-us') }}"
                                  target="_blank">
-                                 Get Started
+                                 Contact
                              </a>
                          </li>
                          <!--button end-->

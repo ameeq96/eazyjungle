@@ -30,18 +30,16 @@
                                  <h4 class="text-white">PRODUCTS</h4>
                                  <ul class="nav flex-column">
                                      <li class="nav-item">
-                                         <a class="nav-link" href="{{ route('wp-hosting') }}">WordPress Hosting</a>
+                                         <a class="nav-link" href="{{ route('business-development') }}">Business Model Development</a>
                                      </li>
                                      <li class="nav-item">
-                                         <a class="nav-link" href="{{ route('shared-hosting') }}">Shared Hosting</a>
+                                         <a class="nav-link" href="{{ route('cyber-security-solutions') }}">Cyber Security Solutions</a>
                                      </li>
                                      <li class="nav-item">
-                                         <a class="nav-link" href="{{ route('vps-hosting') }}">Virtual Private
-                                             Servers</a>
+                                         <a class="nav-link" href="{{ route('website-hosting-solutions') }}">Website Hosting Solutions</a>
                                      </li>
                                      <li class="nav-item">
-                                         <a class="nav-link" href="{{ route('dedicated-server-hosting') }}">Dedicated
-                                             Servers</a>
+                                         <a class="nav-link" href="{{ route('web-development') }}">Website Design & Optimization</a>
                                      </li>
                                  </ul>
                              </div>
@@ -71,11 +69,11 @@
                              <div class="footer-nav-wrap text-white">
                                  <h4 class="text-white">QUICK LINKS</h4>
                                  <ul class="nav flex-column">
-                                     {{-- <li class="nav-item">
-                                         <a class="nav-link" href="{{ route('services') }}">Our Services</a>
-                                     </li> --}}
                                      <li class="nav-item">
-                                         <a class="nav-link" href="{{ route('contact-us') }}">Pricing</a>
+                                         <a class="nav-link" href="#">Blogs</a>
+                                     </li>
+                                     <li class="nav-item">
+                                         <a class="nav-link" href="https://eazyjungle.com/ezclient/index.php?fuse=home&view=register">Register</a>
                                      </li>
                                      <li class="nav-item">
                                          <a class="nav-link" href="{{ route('contact-us') }}">Contact Us</a>
@@ -90,12 +88,11 @@
                              <div class="footer-nav-wrap text-white">
                                  <h4 class="text-white">Contact Information</h4>
                                  <ul class="list-unstyled">
-                                     <li><i class="fas fa-map-marker-alt me-2"></i>3034 Palstan Rd, Unit 303,
-                                         Mississauga, ON L4Y 2Z6</li>
-                                     <li><i class="fas fa-phone me-2"></i><a href="tel:+11234567890"
-                                             class="text-white text-decoration-none">+1 (123) 456-7890</a></li>
-                                     <li><i class="fas fa-envelope me-2"></i><a href="mailto:info@eazyjungle.com"
-                                             class="text-white text-decoration-none">info@eazyjungle.com</a></li>
+                                     <li><i class="fas fa-map-marker-alt me-2"></i>Malir Kalaboard Karachi Pakistan</li>
+                                     <li><i class="fas fa-phone me-2"></i><a href="tel:+923122114325"
+                                             class="text-white text-decoration-none">+923122114325</a></li>
+                                     <li><i class="fas fa-envelope me-2"></i><a href="mailto:support@eazyjungle.pk"
+                                             class="text-white text-decoration-none">support@eazyjungle.pk</a></li>
                                      <li><i class="fas fa-globe me-2"></i><a href="https://www.eazyjungle.com"
                                              target="_blank"
                                              class="text-white text-decoration-none">www.eazyjungle.com</a></li>

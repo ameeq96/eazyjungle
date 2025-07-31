@@ -5,7 +5,7 @@
     <div class="main">
 
         <!--hero section start-->
-        <x-hero-equal-height title="Ecommerce Solutions"
+        <x-hero-equal-height title="Business Model Development"
             subtitle="Web hosting made easy & choose a fine-tuned web hosting services solution for successful personal and business websites."
             :features="[
                 'Flexible, Easy to Use Control Panel',

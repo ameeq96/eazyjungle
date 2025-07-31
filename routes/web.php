@@ -38,6 +38,30 @@ Route::get('dedicated-server-hosting', function () {
     return view('pages.dedicated-server-hosting');
 })->name("dedicated-server-hosting");
 
+Route::get('business-development', function () {
+    return view('pages.business-development');
+})->name("business-development");
+
+Route::get('website-hosting-solutions', function () {
+    return view('pages.website-hosting-solutions');
+})->name("website-hosting-solutions");
+
+Route::get('domain-registration', function () {
+    return view('pages.domain-registration');
+})->name("domain-registration");
+
+Route::get('cyber-security-solutions', function () {
+    return view('pages.cyber-security-solutions');
+})->name("cyber-security-solutions");
+
+Route::get('computing-and-client-management', function () {
+    return view('pages.computing-and-client-management');
+})->name("computing-and-client-management");
+
+Route::get('training-and-testing-solutions', function () {
+    return view('pages.training-and-testing-solutions');
+})->name("training-and-testing-solutions");
+
 Route::get('cloud-hosting', function () {
     return view('pages.cloud-hosting');
 })->name("cloud-hosting");

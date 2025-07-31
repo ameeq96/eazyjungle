@@ -8,7 +8,7 @@
           @include('components.page-header', [
               'title' => 'About Us',
               'subtitle' =>
-                  'Compellingly conceptualize ubiquitous methodologies and progressive total linkage. Credibly reconceptualize enabled models after open-source applications.',
+                  'We are group of professionals based in Canada, USA and Pakistan.  We spent years doing research on technologies related to cyber presence, online business models, marketing structures and strategies, and cyber security. ',
               'background' => 'img/hero-14.jpg',
           ])
           <!--page header section end-->
@@ -24,7 +24,7 @@
           <!--feature section tab style end-->
 
           <!--network map section start-->
-          @include('components.network-map')
+          {{-- @include('components.network-map') --}}
           <!--network map section end-->
 
           <!--call to action section start-->
@@ -36,7 +36,7 @@
           <!--call to action section end-->
 
           <!--feature section start-->
-          <x-feature-section :grayBg="true" />
+          {{-- <x-feature-section :grayBg="true" /> --}}
           <!--feature section end-->
 
           <!--meet our team carousel style start-->

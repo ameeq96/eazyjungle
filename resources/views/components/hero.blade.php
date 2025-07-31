@@ -4,10 +4,10 @@
          <div class="row align-items-center justify-content-between">
              <div class="col-lg-6 col-12">
                  <div class="hero-content-wrap text-white position-relative">
-                     <h1 class="text-white">EazyJungle Best Hosting Provider in World</h1>
-                     <p class="lead">If your WordPress website is your personal business, we
-                         want you to succeed. We made our EazyJungle hosting & domain service provider platform.</p>
-                     <form action="#"
+                     <h1 class="text-white">Eazyjungle, is your technology enabling partner</h1>
+                     <p class="lead">Eazyjungle is your technology partner, offering scalable solutions for your web presence and business needs. From business model development and e-commerce platforms to website design, hosting, and cybersecurity, we provide comprehensive services. We work closely with you to deliver customized solutions within your budget, ensuring your success in the digital world.</p>
+
+                     {{-- <form action="#"
                          class="domain-search-form mt-3">
                          <div class="input-group">
                              <input type="text" name="domain" id="domain" class="form-control"
@@ -19,8 +19,8 @@
                                  </button>
                              </div>
                          </div>
-                     </form>
-                     <div class="domain-list-wrap mt-4">
+                     </form> --}}
+                     {{-- <div class="domain-list-wrap mt-4">
                          <ul class="list-inline domain-search-list text-white">
                              <li class="list-inline-item"><a href="#" class="text-decoration-none"><img
                                          src="{{ asset('img/net-w.png') }}" alt="com" width="75"
@@ -38,7 +38,7 @@
                                          src="{{ asset('img/online-w.png') }}" alt="com" width="75"
                                          class="img-fluid" /> <span>$0.99</span></a></li>
                          </ul>
-                     </div>
+                     </div> --}}
                  </div>
              </div>
              <div class="col-lg-5 col-12">

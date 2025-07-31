@@ -5,7 +5,7 @@
     <div class="main">
 
         <!--hero section start-->
-        <x-hero-equal-height title="Ecommerce Solutions"
+        <x-hero-equal-height title="Website hosting Solutions"
             subtitle="Web hosting made easy & choose a fine-tuned web hosting services solution for successful personal and business websites."
             :features="[
                 'Flexible, Easy to Use Control Panel',
@@ -19,7 +19,7 @@
         <!--hero section end-->
 
         <!--pricing section start-->
-        {{-- @include('components.pricing') --}}
+        @include('components.pricing')
         <!--pricing section end-->
 
 
@@ -52,11 +52,15 @@
         <!--promo-section feature section end-->
 
         <!--feature section start-->
-        {{-- <x-feature-section /> --}}
+        <x-feature-section />
         <!--feature section end-->
 
         <!--call to action new section start-->
-        @include('components.call-to-action')
+        @include('components.call-to-action', [
+            'title' => '30-day Money-back Guarantee',
+            'description' =>
+                'Globally parallel task granular alignments through excellent intellectual capital. Globally deploy vertical leadership.',
+        ])
         <!--call to action new section end-->
 
         <!--faq section start-->
