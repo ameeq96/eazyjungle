@@ -6,15 +6,20 @@
 
         <!--hero section start-->
         <x-hero-equal-height title="Web Development"
-            subtitle="Web hosting made easy & choose a fine-tuned web hosting services solution for successful personal and business websites."
-            :features="[
-                'Flexible, Easy to Use Control Panel',
-                '<strong>Unmetered</strong> Bandwidth',
-                '<strong>Unmetered</strong> Sub Domains, FTP Accounts',
-                '<strong>99%</strong> Uptime Guarantee',
-                '<strong>45-Day</strong> Money-Back Guarantee',
-            ]" offerText="Special intro offer" price="0" decimal="99" regularPrice="$7.99/mo"
-            priceNote="Starting at $2.59/mo" buttonText="Get Started Now" buttonUrl="#" backgroundImage="img/hero-14.jpg" />
+            subtitle="As Always, Eazyjungle Provides Simplified Solutions for your Web Presence" :showRightImage="false" :showPriceBox="true" :features="[
+                'We Work With You to Understand Your business or professional profile',
+                'We will make your preliminary functional website in 24-36 hours',
+                'We Provide a large collection of royalty free pre-made templates to choose from',
+                'No Complex Pricing',
+                'Free One Page Website for Quick Start',
+                'Basic 3 Page Static Website – Rs. 3000',
+                'Basic 5 Page Static Website – Rs. 4000',
+                'Custom Multi-Page Dynamic Website – Starting from Rs. 20,000',
+            ]"
+            offerText="BLOWOUT PRICES" price="3000" decimal="00" regularPrice="Rs. 5000"
+            priceNote="Basic 3 Page Static Website" buttonText="Free Consultation to build a package for your online presence" buttonUrl="#"
+            backgroundImage="img/hero-14.jpg" />
+
 
         <!--hero section end-->
 

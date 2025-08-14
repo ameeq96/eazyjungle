@@ -5,16 +5,22 @@
     <div class="main">
 
         <!--hero section start-->
-        <x-hero-equal-height title="Website hosting Solutions"
-            subtitle="Web hosting made easy & choose a fine-tuned web hosting services solution for successful personal and business websites."
+        <x-hero-equal-height title="Eazyjungle Provides All Types of Web Hosting Solutions" :showRightImage="false"
+            :showPriceBox="true"
+            subtitle="Why Us: We work with you to understand your needs for web presence. We provide need-based solutions, limitless individual attention, teaching, training and support. We empower you to control your website with no complex pricing plans. Free trial available! Want a quick start? Take advantage of our Simple-One Site-One Plan-One Price featuring Free Divi Builder, Free Website Templates, and Free Softaculous App Installer."
             :features="[
                 'Flexible, Easy to Use Control Panel',
                 '<strong>Unmetered</strong> Bandwidth',
                 '<strong>Unmetered</strong> Sub Domains, FTP Accounts',
                 '<strong>99%</strong> Uptime Guarantee',
                 '<strong>45-Day</strong> Money-Back Guarantee',
-            ]" offerText="Special intro offer" price="0" decimal="99" regularPrice="$7.99/mo"
-            priceNote="Starting at $2.59/mo" buttonText="Get Started Now" buttonUrl="#" backgroundImage="img/hero-14.jpg" />
+                'Free Divi Builder',
+                'Free Website Templates',
+                'Free Softaculous App Installer',
+            ]" offerText="Special Intro Offer" price="500" decimal="00" regularPrice="Rs. 4,500/year"
+            priceNote="Rs. 500/month or Rs. 4,500/year" buttonText="Free Consultation to build a package for your online presence" buttonUrl="#"
+            backgroundImage="img/hero-14.jpg" />
+
 
         <!--hero section end-->
 

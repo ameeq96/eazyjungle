@@ -13,7 +13,14 @@
                                      <span class="fas fa-envelope mr-2"></span> support@eazyjungle.pk
                                  </a>
                              </li>
+                             <li class="list-inline-item">
+                                 <a href="tel:+923122114325"
+                                     class="d-flex align-items-center gap-2 text-decoration-none">
+                                     <span class="fas fa-phone mr-2"></span> +92 312 2114325
+                                 </a>
+                             </li>
                          </ul>
+
                      </div>
                  </div>
                  <div class="col-md-4 col-lg-4">
@@ -84,7 +91,8 @@
                                      <div class="col-md-6">
                                          <!-- Business Model Development -->
                                          <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none" href="{{route("business-development")}}">
+                                             <a class="title-with-icon-link text-decoration-none"
+                                                 href="{{ route('business-development') }}">
                                                  <div class="media d-flex gap-2">
                                                      <div class="menu-item-icon"><i class="fas fa-project-diagram"></i>
                                                      </div>
@@ -100,7 +108,8 @@
 
                                          <!-- E-commerce Platform Development -->
                                          <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none" href="{{route("ecommerce-solutions")}}">
+                                             <a class="title-with-icon-link text-decoration-none"
+                                                 href="{{ route('ecommerce-solutions') }}">
                                                  <div class="media d-flex gap-2">
                                                      <div class="menu-item-icon"><i class="fas fa-store"></i></div>
                                                      <div class="media-body">
@@ -115,7 +124,8 @@
 
                                          <!-- Website Design & Optimization -->
                                          <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none" href="{{route("web-development")}}">
+                                             <a class="title-with-icon-link text-decoration-none"
+                                                 href="{{ route('web-development') }}">
                                                  <div class="media d-flex gap-2">
                                                      <div class="menu-item-icon"><i class="fas fa-laptop-code"></i>
                                                      </div>
@@ -131,7 +141,8 @@
 
                                          <!-- Hosting Solutions -->
                                          <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none" href="{{route("website-hosting-solutions")}}">
+                                             <a class="title-with-icon-link text-decoration-none"
+                                                 href="{{ route('website-hosting-solutions') }}">
                                                  <div class="media d-flex gap-2">
                                                      <div class="menu-item-icon"><i class="fas fa-server"></i></div>
                                                      <div class="media-body">
@@ -148,7 +159,8 @@
                                      <div class="col-md-6">
                                          <!-- Domain Registration -->
                                          <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none" href="{{route("domain-registration")}}">
+                                             <a class="title-with-icon-link text-decoration-none"
+                                                 href="{{ route('domain-registration') }}">
                                                  <div class="media d-flex gap-2">
                                                      <div class="menu-item-icon"><i class="fas fa-globe"></i></div>
                                                      <div class="media-body">
@@ -163,7 +175,8 @@
 
                                          <!-- Cybersecurity Solutions -->
                                          <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none" href="{{route("cyber-security-solutions")}}">
+                                             <a class="title-with-icon-link text-decoration-none"
+                                                 href="{{ route('cyber-security-solutions') }}">
                                                  <div class="media d-flex gap-2">
                                                      <div class="menu-item-icon"><i class="fas fa-shield-alt"></i>
                                                      </div>
@@ -179,7 +192,8 @@
 
                                          <!-- Client Management Systems -->
                                          <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none" href="{{route("computing-and-client-management")}}">
+                                             <a class="title-with-icon-link text-decoration-none"
+                                                 href="{{ route('computing-and-client-management') }}">
                                                  <div class="media d-flex gap-2">
                                                      <div class="menu-item-icon"><i class="fas fa-network-wired"></i>
                                                      </div>
@@ -195,7 +209,8 @@
 
                                          <!-- Training & Testing -->
                                          <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none" href="{{route("training-and-testing-solutions")}}">
+                                             <a class="title-with-icon-link text-decoration-none"
+                                                 href="{{ route('training-and-testing-solutions') }}">
                                                  <div class="media d-flex gap-2">
                                                      <div class="menu-item-icon"><i
                                                              class="fas fa-chalkboard-teacher"></i></div>
@@ -363,9 +378,9 @@
                          </li> --}}
                          <!--hosting end-->
 
-                         <li class="nav-item custom-nav-item" data-position="left">
+                         {{-- <li class="nav-item custom-nav-item" data-position="left">
                              <a class="nav-link custom-nav-link" href="#">Blogs</a>
-                         </li>
+                         </li> --}}
 
                          <!--about start-->
                          {{-- <li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="250px"

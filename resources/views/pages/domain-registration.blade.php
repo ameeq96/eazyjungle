@@ -5,16 +5,18 @@
     <div class="main">
 
         <!--hero section start-->
-        <x-hero-equal-height title="Domain Registration & Management"
-            subtitle="Web hosting made easy & choose a fine-tuned web hosting services solution for successful personal and business websites."
-            :features="[
-                'Flexible, Easy to Use Control Panel',
-                '<strong>Unmetered</strong> Bandwidth',
-                '<strong>Unmetered</strong> Sub Domains, FTP Accounts',
-                '<strong>99%</strong> Uptime Guarantee',
-                '<strong>45-Day</strong> Money-Back Guarantee',
-            ]" offerText="Special intro offer" price="0" decimal="99" regularPrice="$7.99/mo"
-            priceNote="Starting at $2.59/mo" buttonText="Get Started Now" buttonUrl="#" backgroundImage="img/hero-14.jpg" />
+        <x-hero-equal-height title="Domain Registration & Management" :showRightImage="false" :showPriceBox="false"
+            subtitle="
+        Find cheap domain names for your website
+        Eazyjungle brings the most competitive prices for domain names
+        Our mission is to provide tailored solutions for your personal or business needs
+        We will not just register a domain for you - We will set it up for you and make sure it is functional by all means
+        Take advantage of our Hosting, Email and SSL solutions to set up your online presence all under one
+    "
+            buttonText="Free Consultation to Build a Package for Your Online Presence"
+            buttonUrl="https://eazyjungle.com/ezclient/order.php?step=1&productGroup=2" backgroundImage="img/hero-14.jpg" />
+
+
 
         <!--hero section end-->
 

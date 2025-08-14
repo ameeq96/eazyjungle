@@ -6,21 +6,13 @@
              <div class="row">
                  <div class="col-md-3">
                      <div class="row footer-top-wrap">
-                         <div class="col-12">
+                         <div class="col-12 text-center">
                              <div class="footer-nav-wrap text-white">
-                                 <h4 class="text-white">SECURED BY</h4>
-                                 <ul class="list-inline security-icon-list">
-                                     <li class="list-inline-item"><img src="{{ 'img/mcafee-logo.png' }}" width="110"
-                                             alt="security" class="img-fluid" /></li>
-                                     <li class="list-inline-item"><img src="{{ 'img/norton-logo.png' }}" width="110"
-                                             alt="security" class="img-fluid" /></li>
-                                     <li class="list-inline-item"><img src="{{ 'img/accredited-logo.png' }}"
-                                             width="110" alt="security" class="img-fluid" /></li>
-                                     <li class="list-inline-item"><img src="{{ 'img/secured-logo.png' }}" width="110"
-                                             alt="security" class="img-fluid" /></li>
-                                 </ul>
+                                 <img src="{{ 'img/logo-color-2.png' }}" width="200" alt="security"
+                                     class="img-fluid mt-2" />
                              </div>
                          </div>
+
                      </div>
                  </div>
                  <div class="col-md-9">
@@ -30,16 +22,20 @@
                                  <h4 class="text-white">PRODUCTS</h4>
                                  <ul class="nav flex-column">
                                      <li class="nav-item">
-                                         <a class="nav-link" href="{{ route('business-development') }}">Business Model Development</a>
+                                         <a class="nav-link" href="{{ route('business-development') }}">Business Model
+                                             Development</a>
                                      </li>
                                      <li class="nav-item">
-                                         <a class="nav-link" href="{{ route('cyber-security-solutions') }}">Cyber Security Solutions</a>
+                                         <a class="nav-link" href="{{ route('cyber-security-solutions') }}">Cyber
+                                             Security Solutions</a>
                                      </li>
                                      <li class="nav-item">
-                                         <a class="nav-link" href="{{ route('website-hosting-solutions') }}">Website Hosting Solutions</a>
+                                         <a class="nav-link" href="{{ route('website-hosting-solutions') }}">Website
+                                             Hosting Solutions</a>
                                      </li>
                                      <li class="nav-item">
-                                         <a class="nav-link" href="{{ route('web-development') }}">Website Design & Optimization</a>
+                                         <a class="nav-link" href="{{ route('web-development') }}">Website Design &
+                                             Optimization</a>
                                      </li>
                                  </ul>
                              </div>
@@ -69,11 +65,12 @@
                              <div class="footer-nav-wrap text-white">
                                  <h4 class="text-white">QUICK LINKS</h4>
                                  <ul class="nav flex-column">
-                                     <li class="nav-item">
+                                     {{-- <li class="nav-item">
                                          <a class="nav-link" href="#">Blogs</a>
-                                     </li>
+                                     </li> --}}
                                      <li class="nav-item">
-                                         <a class="nav-link" href="https://eazyjungle.com/ezclient/index.php?fuse=home&view=register">Register</a>
+                                         <a class="nav-link"
+                                             href="https://eazyjungle.com/ezclient/index.php?fuse=home&view=register">Register</a>
                                      </li>
                                      <li class="nav-item">
                                          <a class="nav-link" href="{{ route('contact-us') }}">Contact Us</a>
@@ -120,9 +117,9 @@
                  <div class="col-md-7 col-lg-6">
                      <div class="payment-method text-end">
                          <ul class="list-inline">
-                             <li class="list-inline-item">
+                             {{-- <li class="list-inline-item">
                                  <img src="{{ 'img/payment-amex.svg' }}" alt="amex" width="50" />
-                             </li>
+                             </li> --}}
                              <li class="list-inline-item">
                                  <img src="{{ 'img/payment-visa.svg' }}" alt="visa" width="50" />
                              </li>
@@ -132,9 +129,9 @@
                              <li class="list-inline-item">
                                  <img src="{{ 'img/payment-paypal.svg' }}" alt="paypal" width="50" />
                              </li>
-                             <li class="list-inline-item">
+                             {{-- <li class="list-inline-item">
                                  <img src="{{ 'img/payment-bitcoin.svg' }}" alt="bitcoin" width="50" />
-                             </li>
+                             </li> --}}
                          </ul>
                      </div>
                  </div>
