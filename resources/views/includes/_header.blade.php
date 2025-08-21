@@ -106,39 +106,7 @@
                                              </a>
                                          </div>
 
-                                         <!-- E-commerce Platform Development -->
-                                         <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('ecommerce-solutions') }}">
-                                                 <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-store"></i></div>
-                                                     <div class="media-body">
-                                                         <span class="u-header__promo-title">E-Commerce Platform
-                                                             Development</span>
-                                                         <small class="u-header__promo-text">Build stores with content
-                                                             & management</small>
-                                                     </div>
-                                                 </div>
-                                             </a>
-                                         </div>
-
-                                         <!-- Website Design & Optimization -->
-                                         <div class="title-with-icon-item">
-                                             <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('web-development') }}">
-                                                 <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-laptop-code"></i>
-                                                     </div>
-                                                     <div class="media-body">
-                                                         <span class="u-header__promo-title">Website Design &
-                                                             Optimization</span>
-                                                         <small class="u-header__promo-text">Modern, fast, and
-                                                             optimized websites</small>
-                                                     </div>
-                                                 </div>
-                                             </a>
-                                         </div>
-
+                                         
                                          <!-- Hosting Solutions -->
                                          <div class="title-with-icon-item">
                                              <a class="title-with-icon-link text-decoration-none"
@@ -154,6 +122,24 @@
                                                  </div>
                                              </a>
                                          </div>
+
+                                                                                  <!-- Cybersecurity Solutions -->
+                                         <div class="title-with-icon-item">
+                                             <a class="title-with-icon-link text-decoration-none"
+                                                 href="{{ route('cyber-security-solutions') }}">
+                                                 <div class="media d-flex gap-2">
+                                                     <div class="menu-item-icon"><i class="fas fa-shield-alt"></i>
+                                                     </div>
+                                                     <div class="media-body">
+                                                         <span class="u-header__promo-title">Cyber Security
+                                                             Solutions</span>
+                                                         <small class="u-header__promo-text">SSL & protection
+                                                             services</small>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                        
                                      </div>
 
                                      <div class="col-md-6">
@@ -173,25 +159,25 @@
                                              </a>
                                          </div>
 
-                                         <!-- Cybersecurity Solutions -->
+                                          <!-- Website Design & Optimization -->
                                          <div class="title-with-icon-item">
                                              <a class="title-with-icon-link text-decoration-none"
-                                                 href="{{ route('cyber-security-solutions') }}">
+                                                 href="{{ route('web-development') }}">
                                                  <div class="media d-flex gap-2">
-                                                     <div class="menu-item-icon"><i class="fas fa-shield-alt"></i>
+                                                     <div class="menu-item-icon"><i class="fas fa-laptop-code"></i>
                                                      </div>
                                                      <div class="media-body">
-                                                         <span class="u-header__promo-title">Cyber Security
-                                                             Solutions</span>
-                                                         <small class="u-header__promo-text">SSL & protection
-                                                             services</small>
+                                                         <span class="u-header__promo-title">Website Design &
+                                                             Optimization</span>
+                                                         <small class="u-header__promo-text">Modern, fast, and
+                                                             optimized websites</small>
                                                      </div>
                                                  </div>
                                              </a>
                                          </div>
 
                                          <!-- Client Management Systems -->
-                                         <div class="title-with-icon-item">
+                                         {{-- <div class="title-with-icon-item">
                                              <a class="title-with-icon-link text-decoration-none"
                                                  href="{{ route('computing-and-client-management') }}">
                                                  <div class="media d-flex gap-2">
@@ -205,7 +191,7 @@
                                                      </div>
                                                  </div>
                                              </a>
-                                         </div>
+                                         </div> --}}
 
                                          <!-- Training & Testing -->
                                          <div class="title-with-icon-item">

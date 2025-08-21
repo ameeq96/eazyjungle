@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            {{-- <div class="col-md-6 col-lg-4">
                 <div class="single-service-plane text-center rounded white-bg shadow-sm p-5 mt-4">
                     <i class="fas fa-store fa-3x mb-4" style="color: #035ded;"></i>
                     <div class="service-plane-content">
@@ -33,7 +33,7 @@
                         <a href="{{route("ecommerce-solutions")}}" class="btn-link text-decoration-none">View Details <span class="fas fa-long-arrow-alt-right"></span></a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="col-md-6 col-lg-4">
                 <div class="single-service-plane text-center rounded white-bg shadow-sm p-5 mt-4">
@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            {{-- <div class="col-md-6 col-lg-4">
                 <div class="single-service-plane text-center rounded white-bg shadow-sm p-5 mt-4">
                     <i class="fas fa-users fa-3x mb-4" style="color: #035ded;"></i>
                     <div class="service-plane-content">
@@ -98,7 +98,7 @@
                         <a href="{{route("computing-and-client-management")}}" class="btn-link text-decoration-none">View Details <span class="fas fa-long-arrow-alt-right"></span></a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="col-md-6 col-lg-4">
                 <div class="single-service-plane text-center rounded white-bg shadow-sm p-5 mt-4">

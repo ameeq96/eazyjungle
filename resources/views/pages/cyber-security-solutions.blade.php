@@ -5,16 +5,26 @@
     <div class="main">
 
         <!--hero section start-->
-        <x-hero-equal-height title="Cyber Security Solutions"
-            subtitle="Web hosting made easy & choose a fine-tuned web hosting services solution for successful personal and business websites."
-            :features="[
-                'Flexible, Easy to Use Control Panel',
-                '<strong>Unmetered</strong> Bandwidth',
-                '<strong>Unmetered</strong> Sub Domains, FTP Accounts',
-                '<strong>99%</strong> Uptime Guarantee',
-                '<strong>45-Day</strong> Money-Back Guarantee',
-            ]" offerText="Special intro offer" price="0" decimal="99" regularPrice="$7.99/mo"
-            priceNote="Starting at $2.59/mo" buttonText="Get Started Now" buttonUrl="#" backgroundImage="img/hero-14.jpg" />
+       <x-hero-equal-height 
+    title="Cyber Security Solutions"
+    subtitle="Protect your business from digital threats with advanced cyber security solutions designed to secure data, networks, and applications."
+    :features="[
+        '24/7 <strong>Threat Monitoring</strong> and Detection',
+        '<strong>Advanced Firewall</strong> & Intrusion Prevention',
+        '<strong>Data Encryption</strong> and Secure Backups',
+        '<strong>Vulnerability</strong> Assessments & Penetration Testing',
+        '<strong>Incident Response</strong> and Recovery Support',
+    ]" 
+    offerText="Comprehensive Security Package" 
+    price="19" 
+    decimal="99" 
+    regularPrice="$49.99/mo"
+    priceNote="Starting at just $19.99/mo" 
+    buttonText="Secure Your Business" 
+    buttonUrl="https://wa.me/923122114325" 
+backgroundImage="img/hero-14.jpg"
+    :showRightImage="false" :showPriceBox="false"
+/>
 
         <!--hero section end-->
 
@@ -23,33 +33,7 @@
         <!--pricing section end-->
 
 
-        <!--promo-section feature section start-->
-        <x-promo-features heading="Why Choose This Package"
-            description="Distinctively recaptiualize principle-centered core competencies through client-centered core competencies. Enthusiastically provide access."
-            :features="[
-                [
-                    'icon' => 'ti-thumb-up',
-                    'title' => '100% Network Uptime',
-                    'description' => 'Holisticly whiteboard seamless ideas rather than cross',
-                ],
-                [
-                    'icon' => 'ti-headphone-alt',
-                    'title' => '24x7 Tech Support',
-                    'description' => 'Collaboratively architect sustainable e-services',
-                ],
-                [
-                    'icon' => 'ti-lock',
-                    'title' => 'DDoS Protection',
-                    'description' => 'Professionally envisioneer adaptive materials schemas',
-                ],
-                [
-                    'icon' => 'ti-user',
-                    'title' => 'Trusted by Millions',
-                    'description' => 'Seamlessly pontificate business best practices systems',
-                ],
-            ]" />
-
-        <!--promo-section feature section end-->
+        @include('components.promo-features')
 
         <!--feature section start-->
         {{-- <x-feature-section /> --}}
@@ -64,35 +48,7 @@
         <!--faq section end-->
 
         <!--testimonial and review section start-->
-        @include('components.client-review', [
-            'title' => 'What Our Customers Say About Us?',
-            'subtitle' => 'Authoritatively reinvent client-centric e-markets via fully tested process.',
-            'align' => 'center',
-            'sectionClass' => 'client-review-section ptb-100 gray-light-bg',
-            'reviews' => [
-                [
-                    'name' => 'Alex Khamer',
-                    'title' => 'Awesome support from technical',
-                    'message' =>
-                        'Objectively envisioneer magnetic manufactured products and dynamic models. Progressively maximize 2.0 relationships whereas process-centric.',
-                    'time' => '6 days ago',
-                ],
-                [
-                    'name' => 'Peter Anderson',
-                    'title' => 'Awesome Design Quality with Support',
-                    'message' =>
-                        'Objectively envisioneer magnetic manufactured products and dynamic models maximize 2.0 relationships whereas methodologies.',
-                    'time' => '3 days ago',
-                ],
-                [
-                    'name' => 'Jolio Darix',
-                    'title' => 'Contacted support after Midnight',
-                    'message' =>
-                        'Objectively envisioneer magnetic manufactured products and dynamic models. Progressively maximize 2.0 relationships whereas process-centric.',
-                    'time' => '8 days ago',
-                ],
-            ],
-        ])
+       @include('components.client-review')
         <!--testimonial and review section end-->
 
     </div>

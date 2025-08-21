@@ -20,7 +20,7 @@
                     <li>Training and support tailored to the client’s skill level</li>
                 </ul>
                 <div class="action-btns mt-4">
-                    <a href="[LINK_TO_YOUR_CALENDAR]" class="btn primary-solid-btn mr-2">Book Free 30-Minute Consultation</a>
+                    <a href="https://wa.me/923122114325" class="btn primary-solid-btn mr-2">Book Free 30-Minute Consultation</a>
                 </div>
             </div>
         </div>

@@ -13,6 +13,7 @@
     'regularPrice' => '',
     'showRightImage' => true,
     'showPriceBox' => true,
+    'priceDuration' => '/month',
 ])
 
 
@@ -85,7 +86,7 @@
                                 <span class="decimal align-self-start"
                                     style="font-size: 1.5rem; margin-top: 10px;">.{{ $decimal }}</span>
                             </div>
-                            <small class="text-white-50 d-block mb-3">/month</small>
+                            <small class="text-white-50 d-block mb-3">{{$priceDuration}}</small>
                         @endif
 
                         @if ($regularPrice)

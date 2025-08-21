@@ -90,9 +90,9 @@
                                              class="text-white text-decoration-none">+923122114325</a></li>
                                      <li><i class="fas fa-envelope me-2"></i><a href="mailto:support@eazyjungle.pk"
                                              class="text-white text-decoration-none">support@eazyjungle.pk</a></li>
-                                     <li><i class="fas fa-globe me-2"></i><a href="https://www.eazyjungle.com"
+                                     <li><i class="fas fa-globe me-2"></i><a href="https://www.eazyjungle.pk"
                                              target="_blank"
-                                             class="text-white text-decoration-none">www.eazyjungle.com</a></li>
+                                             class="text-white text-decoration-none">www.eazyjungle.pk</a></li>
                                  </ul>
                              </div>
                          </div>

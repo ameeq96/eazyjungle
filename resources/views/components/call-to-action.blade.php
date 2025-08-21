@@ -12,7 +12,7 @@
                     <h2 class="text-white">{{ $title }}</h2>
                     <p>{!! $description !!}</p>
                     <div class="action-btns d-flex align-items-center justify-content-center gap-3 mt-3">
-                        <a href="[Link for Calander booking]" class="btn solid-white-btn mr-3">Start Now Consultation</a>
+                        <a href="https://wa.me/923122114325" class="btn solid-white-btn mr-3">Start Now Consultation</a>
                     </div>
                 </div>
             </div>
