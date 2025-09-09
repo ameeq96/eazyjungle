@@ -70,7 +70,7 @@
                                      </li> --}}
                                      <li class="nav-item">
                                          <a class="nav-link"
-                                             href="https://eazyjungle.com/ezclient/index.php?fuse=home&view=register">Register</a>
+                                             href="https://eazyjungle.pk/public/ezclient/index.php?fuse=home&view=register">Register</a>
                                      </li>
                                      <li class="nav-item">
                                          <a class="nav-link" href="{{ route('contact-us') }}">Contact Us</a>

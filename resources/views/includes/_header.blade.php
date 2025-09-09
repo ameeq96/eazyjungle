@@ -28,13 +28,13 @@
                          <ul class="list-inline text-end">
                              <li class="list-inline-item">
                                  <a class="d-flex align-items-center gap-2 text-decoration-none"
-                                     href="https://eazyjungle.com/ezclient/index.php?fuse=home&view=login">
+                                     href="https://eazyjungle.pk/public/ezclient/index.php?fuse=home&view=login">
                                      <span class="fas fa-user mr-2"></span> Login
                                  </a>
                              </li>
                              <li class="list-inline-item">
                                  <a class="d-flex align-items-center gap-2 text-decoration-none"
-                                     href="https://eazyjungle.com/ezclient/index.php?fuse=home&view=register">
+                                     href="https://eazyjungle.pk/public/ezclient/index.php?fuse=home&view=register">
                                      <span class="fas fa-lock mr-2"></span> Register
                                  </a>
                              </li>
