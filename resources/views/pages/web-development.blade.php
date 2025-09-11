@@ -11,10 +11,10 @@
                 'We will make your preliminary functional website in 24-36 hours',
                 'We Provide a large collection of royalty free pre-made templates to choose from',
                 'No Complex Pricing',
-                'Free One Page Website for Quick Start',
-                'Basic 3 Page Static Website – Rs. 3000',
-                'Basic 5 Page Static Website – Rs. 4000',
-                'Custom Multi-Page Dynamic Website – Starting from Rs. 20,000',
+                'Basic 1 Page Static Website - Rs. 10,000',
+                'Basic 3 Page Static Website - Rs. 14,000',
+                'Basic 5 Page Static Website - Rs. 18,000',
+                'Custom Multi-Page Dynamic Website - Starting from Rs. 25,000',
             ]"
             offerText="BLOWOUT PRICES" price="3000" decimal="00" regularPrice="Rs. 5000" priceDuration=""
             priceNote="Basic 3 Page Static Website" buttonText="Free Consultation to build a package for your online presence" buttonUrl="https://eazyjungle.pk/public/ezclient/order.php?step=1&productGroup=4"
