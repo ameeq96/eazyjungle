@@ -25,11 +25,11 @@
         <!--hero section end-->
 
         <!--pricing section start-->
-        @include('components.pricing')
+        {{-- @include('components.pricing') --}}
         <!--pricing section end-->
 
 
-        @include('components.promo-features')
+        {{-- @include('components.promo-features') --}}
 
         <!--feature section start-->
         <x-feature-section />

@@ -16,7 +16,7 @@
                 'Basic 5 Page Static Website - Rs. 18,000',
                 'Custom Multi-Page Dynamic Website - Starting from Rs. 25,000',
             ]"
-            offerText="BLOWOUT PRICES" price="3000" decimal="00" regularPrice="Rs. 5000" priceDuration=""
+            offerText="BLOWOUT PRICES" price="10,000" decimal="00" regularPrice="Rs. 14,000" priceDuration=""
             priceNote="Basic 3 Page Static Website" buttonText="Free Consultation to build a package for your online presence" buttonUrl="https://eazyjungle.pk/public/ezclient/order.php?step=1&productGroup=4"
             backgroundImage="img/hero-14.jpg" />
 
