@@ -4,6 +4,12 @@
     'features' => [],
     'buttonText' => 'Book Today',
     'buttonUrl' => '#',
+
+    // NEW
+    'showSecondButton' => false,
+    'secondButtonText' => 'Learn More',
+    'secondButtonUrl' => '#',
+
     'backgroundImage' => 'assets/img/hero-14.jpg',
     'rightImage' => 'assets/img/business-model.png',
     'rightText' => '',
@@ -16,12 +22,10 @@
     'priceDuration' => '/month',
 ])
 
-
 <section class="hero-equal-height pt-165 pb-100 gradient-overly-right"
     style="background: url('{{ asset($backgroundImage) }}') no-repeat center center / cover">
     <div class="container">
         <div class="row align-items-center justify-content-between">
-            <!-- Left content -->
             <div class="col-md-7 col-lg-7">
                 <div class="hero-content-wrap text-white position-relative z-index">
                     <h1 class="text-white">{{ $title }}</h1>
@@ -41,62 +45,70 @@
                                     </ul>
                                 </li>
                             @else
-                                <li class="py-1 d-flex align-items-center gap-2">
+                                <li class="py-1 d-flex align-items-center">
                                     <span class="ti-control-forward mr-2"></span>{!! $feature !!}
                                 </li>
                             @endif
                         @endforeach
                     </ul>
+                </div>
 
+                {{-- Action Buttons: 2 buttons in d-flex --}}
+                <div class="action-btns mt-4 d-flex flex-column">
+                    <!-- First Button -->
+                    <a class="btn primary-solid-btn animated-btn w-100 mb-3" href="{{ $buttonUrl }}">
+                        {{ $buttonText }}
+                    </a>
+
+                    <!-- Second Button (Optional) -->
+                    @if ($showSecondButton)
+                        <a class="btn primary-solid-btn animated-btn w-100" href="{{ $secondButtonUrl }}">
+                            {{ $secondButtonText }}
+                        </a>
+                    @endif
                 </div>
-                <div class="action-btns mt-4">
-                    <a class="btn primary-solid-btn animated-btn" href="{{ $buttonUrl }}">{{ $buttonText }}</a>
-                </div>
+
             </div>
 
-            <!-- Right image + text + button -->
             @if ($showRightImage)
-            <div class="col-md-5 col-lg-5">
-                <div class="text-white text-center py-5 px-4">
-                    @if ($rightText)
-                        <p class="mb-4">{!! $rightText !!}</p>
-                    @endif
-
-                    @if ($showRightImage)
+                <div class="col-md-5 col-lg-5">
+                    <div class="text-white text-center py-5 px-4">
+                        @if ($rightText)
+                            <p class="mb-4">{!! $rightText !!}</p>
+                        @endif
                         <div class="mb-4">
                             <img src="{{ asset($rightImage) }}" alt="Business Model" class="img-fluid rounded shadow">
                         </div>
-                    @endif
+                    </div>
                 </div>
-            </div>
             @endif
 
             @if ($showPriceBox)
                 <div class="col-md-5 col-lg-5">
                     <div class="offer-box text-white text-center py-5 px-4 rounded shadow">
                         @if ($offerText)
-                            <span class="h6 text-white text-uppercase font-weight-bold d-block mb-2">{{ $offerText }}</span>
+                            <span
+                                class="h6 text-white text-uppercase font-weight-bold d-block mb-2">{{ $offerText }}</span>
                         @endif
 
                         @if ($price && $decimal)
                             <div class="d-flex justify-content-center align-items-start mb-2">
-                                <span class="currency usa-currency display-6 text-white" style="line-height: 1">RS</span>
+                                <span class="currency usa-currency display-6 text-white"
+                                    style="line-height: 1">RS</span>
                                 <h2 class="offer-price text-white mb-0 display-3 font-weight-bold">{{ $price }}
                                 </h2>
                                 <span class="decimal align-self-start"
-                                    style="font-size: 1.5rem; margin-top: 10px;">.{{ $decimal }}</span>
+                                    style="font-size:1.5rem;margin-top:10px;">.{{ $decimal }}</span>
                             </div>
-                            <small class="text-white-50 d-block mb-3">{{$priceDuration}}</small>
+                            <small class="text-white-50 d-block mb-3">{{ $priceDuration }}</small>
                         @endif
 
                         @if ($regularPrice)
                             <p class="regular-price mb-4">Regular Price <strong>{{ $regularPrice }}</strong></p>
-                        @endif                       
+                        @endif
                     </div>
                 </div>
-
             @endif
-
         </div>
     </div>
 </section>
