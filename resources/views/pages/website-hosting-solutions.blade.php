@@ -18,7 +18,7 @@
                 'Free Website Templates',
                 'Free Softaculous App Installer',
             ]" offerText="Special Intro Offer" price="500" decimal="00" regularPrice="Rs. 4,500/year"
-            priceNote="Rs. 500/month or Rs. 4,500/year" buttonText="Free Consultation to build a package for your online presence" buttonUrl="https://wa.me/923122114325"
+            priceNote="Rs. 500/month or Rs. 4,500/year" buttonText="Free Consultation to build a package for your online presence" buttonUrl="https://eazyjungle.pk/public/ezclient/order.php?step=1&productGroup=1&product=1"
             backgroundImage="img/hero-14.jpg" />
 
 
