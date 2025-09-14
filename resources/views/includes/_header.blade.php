@@ -16,7 +16,7 @@
                              <li class="list-inline-item">
                                  <a href="tel:+923122114325"
                                      class="d-flex align-items-center gap-2 text-decoration-none">
-                                     <span class="fas fa-phone mr-2"></span> +92 312 2114325
+                                     <span class="fas fa-phone mr-2"></span> +92 312 21143252323
                                  </a>
                              </li>
                          </ul>
