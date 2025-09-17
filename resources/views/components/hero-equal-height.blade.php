@@ -20,6 +20,9 @@
     'showRightImage' => true,
     'showPriceBox' => true,
     'priceDuration' => '/month',
+
+    // NEW NOTE PROP
+    'noteText' => 'Prices in PAK RS will be converted to equivalent CAD and processed through our head office in Canada. Contact us for payment arrangement in PAK RS.',
 ])
 
 <section class="hero-equal-height pt-165 pb-100 gradient-overly-right"
@@ -105,6 +108,14 @@
 
                         @if ($regularPrice)
                             <p class="regular-price mb-4">Regular Price <strong>{{ $regularPrice }}</strong></p>
+                        @endif
+
+                        @if ($noteText)
+                            <div class="note-text mt-3">
+                                <small class="text-white">
+                                    {{ $noteText }}
+                                </small>
+                            </div>
                         @endif
                     </div>
                 </div>

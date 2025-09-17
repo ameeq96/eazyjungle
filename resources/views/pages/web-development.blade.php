@@ -20,7 +20,8 @@
             regularPrice="Rs. 14,000" priceDuration="" priceNote="Basic 3 Page Static Website"
             buttonText="Free Consultation to build a package" buttonUrl="https://wa.me/923122114325"
             backgroundImage="img/hero-14.jpg" showSecondButton="true" secondButtonText="Buy Now"
-            secondButtonUrl="https://eazyjungle.pk/public/ezclient/order.php?step=1&productGroup=4" />
+            secondButtonUrl="https://eazyjungle.pk/public/ezclient/order.php?step=1&productGroup=4"
+            noteText="Prices in PAK RS will be converted to equivalent CAD and processed through our head office in Canada. Contact us for payment arrangement in PAK RS." />
 
 
         <!--hero section end-->
