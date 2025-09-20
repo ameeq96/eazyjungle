@@ -1,52 +1,55 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{{-- resources/views/includes/_head.blade.php --}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO Meta description -->
-    <meta name="description"
-        content="EazyJungle hosting template designed for all web hosting, business, multi purpose, domain sale websites, online business, personal hosting company and similar sites and many more.">
-    <meta name="author" content="ThemeTags">
+@php
+  $siteName   = config('app.name', 'EazyJungle');
+  $siteUrl    = config('app.url', url('/'));
+  $pageTitle  = trim($__env->yieldContent('title')) ?: $siteName;
+  $fullTitle  = $pageTitle === $siteName ? $siteName : "{$pageTitle} | {$siteName}";
+  $desc       = trim($__env->yieldContent('meta_description')) ?: 'Fast, secure & affordable hosting and digital services by EazyJungle. WHMCS-ready, 24/7 support.';
+  $robots     = trim($__env->yieldContent('meta_robots')) ?: 'index,follow';
+  $canonical  = trim($__env->yieldContent('canonical')) ?: url()->current();
+  $ogType     = trim($__env->yieldContent('og_type')) ?: 'website';
+  $ogImage    = trim($__env->yieldContent('og_image')) ?: asset('img/og/default.jpg');
+@endphp
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="" /> <!-- website name -->
-    <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-    <meta property="og:type" content="article" />
+<title>{{ $fullTitle }}</title>
+<meta name="description" content="{{ $desc }}">
+<meta name="robots" content="{{ $robots }}">
+<link rel="canonical" href="{{ $canonical }}">
 
-    <!--favicon icon-->
-    <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/png" sizes="16x16">
+{{-- Open Graph --}}
+<meta property="og:site_name" content="{{ $siteName }}">
+<meta property="og:type" content="{{ $ogType }}">
+<meta property="og:url" content="{{ $canonical }}">
+<meta property="og:title" content="{{ $pageTitle }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:image" content="{{ $ogImage }}">
+<meta property="og:image:alt" content="{{ $pageTitle }}">
 
-    <!--google fonts-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap"
-        rel="stylesheet">
+{{-- Twitter Card --}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $pageTitle }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $ogImage }}">
 
-    <!--title-->
-    <title>EazyJungle - Hosting Provider with WHMCS Template</title>
+{{-- Icons / PWA --}}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon-32.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/apple-touch-icon.png') }}">
+<link rel="manifest" href="{{ asset('site.webmanifest') }}">
+<meta name="theme-color" content="#0b5fff">
 
-    <!--build:css-->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <!-- endbuild -->
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+{{-- Fonts: MUST keep both preconnect AND stylesheet link --}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+  rel="stylesheet">
 
+{{-- CSS --}}
+<link rel="stylesheet" href="{{ asset('css/main.css') }}">
+<link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
-    <!--build:js-->
-    <script src="{{ asset('js/vendors/jquery-3.5.1.min.js') }}"></script>
-    <script src="{{ asset('js/vendors/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('js/vendors/bootstrap-slider.min.js') }}"></script>
-    <script src="{{ asset('js/vendors/jquery.countdown.min.js') }}"></script>
-    <script src="{{ asset('js/vendors/jquery.easing.min.js') }}"></script>
-    <script src="{{ asset('js/vendors/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('js/vendors/validator.min.js') }}"></script>
-    <script src="{{ asset('js/vendors/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('js/vendors/jquery.rcounterup.js') }}"></script>
-    <script src="{{ asset('js/vendors/magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('js/vendors/hs.megamenu.js') }}"></script>
-    <script src="{{ asset('js/vendors/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
-    <!--endbuild-->
-</head>
+{{-- Structured data hook --}}
+@stack('structured_data')

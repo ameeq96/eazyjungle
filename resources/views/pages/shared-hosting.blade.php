@@ -1,5 +1,7 @@
 @extends('layouts.default')
-@section('title', 'home')
+@section('title', 'Shared Web Hosting')
+@section('meta_description', 'Web hosting made easy & choose a fine-tuned web hosting services solution for successful personal and business websites.')
+@section('og_image', asset('img/og/shared-hosting.jpg'))
 @section('content')
 
     <div class="main">

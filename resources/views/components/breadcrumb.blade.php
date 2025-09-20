@@ -22,3 +22,28 @@
         </div>
     </div>
 </div>
+
+@push('structured_data')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ url('/') }}"
+    }
+    @foreach ($items as $index => $item)
+    ,{
+      "@type": "ListItem",
+      "position": {{ $index + 2 }},
+      "name": "{{ $item['label'] }}",
+      "item": "{{ $item['url'] ?? url()->current() }}"
+    }
+    @endforeach
+  ]
+}
+</script>
+@endpush

@@ -1,25 +1,67 @@
 @extends('layouts.default')
-@section('title', 'home')
+
+{{-- === SEO meta for Domain Registration === --}}
+@section('title', 'Domain Registration And Management')
+@section('meta_description', 'Find cheap domain names for your website. EazyJungle brings competitive prices and full setup—DNS, email and SSL—so your domain is functional end-to-end. Set up your online presence with Hosting, Email and SSL in one place.')
+@section('canonical', url('/domain-registration')) {{-- slug aapke route ke mutabiq update kar len --}}
+@section('og_type', 'website')
+@section('og_image', asset('img/og/domain-registration.jpg')) {{-- fallback: img/og/default.jpg --}}
+
+@push('structured_data')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Domain Registration & Management",
+  "serviceType": "Domain Registration",
+  "description": "Competitive domain pricing with complete setup and management: DNS, email, SSL and guidance for individuals and businesses.",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ config('app.name', 'EazyJungle') }}",
+    "url": "{{ config('app.url', url('/')) }}",
+    "logo": "{{ asset('img/logo.png') }}"
+  },
+  "areaServed": ["PK","CA"],
+  "offers": {
+    "@type": "Offer",
+    "url": "https://eazyjungle.pk/public/ezclient/order.php?step=1&productGroup=2",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"{{ url('/') }}"},
+    {"@type":"ListItem","position":2,"name":"Domain Registration & Management","item":"{{ url('/domain-registration') }}"}
+  ]
+}
+</script>
+@endpush
+{{-- === /SEO meta === --}}
+
 @section('content')
 
     <div class="main">
 
-
-        <x-hero-equal-height title="Domain Registration & Management" :showRightImage="false" :showPriceBox="true"
-            subtitle="Find cheap domain names for your website Eazyjungle brings the most competitive prices for domain names Our mission is to provide tailored solutions for your personal or business needs We will not just register a domain for you - We will set it up for you and make sure it is functional by all means Take advantage of our Hosting, Email and SSL solutions to set up your online presence all under one"
+        <!--hero section start-->
+        <x-hero-equal-height 
+            title="Domain Registration & Management"
+            subtitle="Find cheap domain names for your website. EazyJungle brings competitive prices and full setup—DNS, email and SSL—so your domain is functional end-to-end. Set up your online presence with Hosting, Email and SSL in one place."
+            :showRightImage="false"
+            :showPriceBox="true"
             buttonText="Choose a Domain Name"
             buttonUrl="https://eazyjungle.pk/public/ezclient/order.php?step=1&productGroup=2"
             backgroundImage="img/hero-14.jpg"
-            noteText="Prices in PAK RS will be converted to equivalent CAD and processed through our head office in Canada. Contact us for payment arrangement in PAK RS." />
-
-
-
+            noteText="Prices in PKR will be converted to CAD and processed via our Canada head office. Contact us for PKR payment arrangements." 
+        />
         <!--hero section end-->
 
         <!--pricing section start-->
         {{-- @include('components.pricing') --}}
         <!--pricing section end-->
-
 
         @include('components.promo-features')
 
