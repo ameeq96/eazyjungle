@@ -5,7 +5,7 @@
 @section('meta_description', 'Eazyjungle is your technology partner, offering scalable solutions for your web presence and business needs. From business model development and e-commerce platforms to website design, hosting, and cybersecurity, we provide comprehensive services. We work closely with you to deliver customized solutions within your budget, ensuring your success in the digital world.')
 @section('canonical', config('app.url')) {{-- homepage canonical --}}
 @section('og_type', 'website')
-@section('og_image', asset('img/og/home.jpg')) {{-- fallback: img/og/default.jpg --}}
+@section('og_image', asset('img/logo-color.png')) {{-- fallback: img/og/default.jpg --}}
 
 @push('structured_data')
 <script type="application/ld+json">

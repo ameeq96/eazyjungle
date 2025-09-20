@@ -7,7 +7,7 @@
     People - Products - Technology - Systems')
 @section('canonical', config('app.url')) {{-- homepage canonical --}}
 @section('og_type', 'website')
-@section('og_image', asset('img/og/home.jpg')) {{-- fallback: img/og/default.jpg --}}
+@section('og_image', asset('img/logo-color.png')) {{-- fallback: img/og/default.jpg --}}
 
 @push('structured_data')
     <script type="application/ld+json">
