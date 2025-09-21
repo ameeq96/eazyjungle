@@ -2,7 +2,7 @@
 
 {{-- === SEO meta for Home === --}}
 @section('title', 'Web Hosting, Domains, Email And Security')
-@section('meta_description', 'Eazyjungle is your technology partner, offering scalable solutions for your web presence and business needs. From business model development and e-commerce platforms to website design, hosting, and cybersecurity, we provide comprehensive services. We work closely with you to deliver customized solutions within your budget, ensuring your success in the digital world.')
+@section('meta_description', 'EazyJungle builds your online presence: hosting, domains, email, web development and cybersecurity — simple pricing, fast setup and 24/7 support.')
 @section('canonical', config('app.url')) {{-- homepage canonical --}}
 @section('og_type', 'website')
 @section('og_image', asset('img/logo-color.png')) {{-- fallback: img/og/default.jpg --}}
