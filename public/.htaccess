@@ -5,34 +5,21 @@
 
     RewriteEngine On
 
-    # ---------------- Canonical redirects ----------------
-    # 1) www  -> non-www  (final host: eazyjungle.pk)
-    RewriteCond %{HTTP_HOST} ^www\.eazyjungle\.pk$ [NC]
-    RewriteRule ^ https://eazyjungle.pk%{REQUEST_URI}?%{QUERY_STRING} [L,R=301]
-
-    # 2) http -> https (respect proxies/CDN like Cloudflare)
-    #    - If HTTPS off at origin AND X-Forwarded-Proto not https, then redirect.
-    RewriteCond %{HTTPS} !=on
-    RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
-    RewriteRule ^ https://eazyjungle.pk%{REQUEST_URI}?%{QUERY_STRING} [L,R=301]
-
-    # ---------------- Security headers (optional) ----------------
+    # Remove X-Powered-By header for security
     <IfModule mod_headers.c>
         Header unset X-Powered-By
-        # Enable after confirming HTTPS works everywhere:
-        # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
     </IfModule>
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-    # Redirect trailing slash if not a real folder
+    # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
-    # Laravel front controller
+    # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
