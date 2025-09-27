@@ -5,9 +5,18 @@
 
     RewriteEngine On
 
+    # ---- Canonical redirects: force HTTPS + non-www ----
+    # http  -> https
+    # www   -> non-www  (final: https://eazyjungle.pk)
+    RewriteCond %{HTTPS} !=on [OR]
+    RewriteCond %{HTTP_HOST} ^www\.eazyjungle\.pk$ [NC]
+    RewriteRule ^ https://eazyjungle.pk%{REQUEST_URI}?%{QUERY_STRING} [L,R=301]
+
     # Remove X-Powered-By header for security
     <IfModule mod_headers.c>
         Header unset X-Powered-By
+        # Optional (enable after confirming HTTPS everywhere):
+        # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
     </IfModule>
 
     # Handle Authorization Header
