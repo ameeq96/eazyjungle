@@ -4,7 +4,10 @@
             <div class="col-md-9 col-lg-8">
                 <div class="section-heading text-center mb-5 mb-sm-5 mb-md-3 mb-lg-3">
                     <h2>We provide solutions for your web presence and propagations</h2>
-                    <p class="lead">Our solutions are scalable to your individual or business needs. Let us be your trusted partners in building need-based solutions for the following but not limited to:</p>
+                    <p class="lead">Our solutions are scalable to your individual or business needs. Let us be your
+                        trusted partners in building need-based solutions for the following but not limited to: We offer
+                        affordable web design services and web design services for small business. Our team specializes
+                        in small business web design and web design and seo (web design certificate).</p>
                 </div>
             </div>
         </div>
@@ -17,7 +20,8 @@
                         <p>Expert consultation for building effective business models.</p>
                     </div>
                     <div class="action-wrap mt-3">
-                        <a href="{{route("business-development")}}" class="btn-link text-decoration-none">View Details <span class="fas fa-long-arrow-alt-right"></span></a>
+                        <a href="{{ route('business-development') }}" class="btn-link text-decoration-none">View Details
+                            <span class="fas fa-long-arrow-alt-right"></span></a>
                     </div>
                 </div>
             </div>
@@ -43,7 +47,8 @@
                         <p>Get your website designed and optimized for performance and usability.</p>
                     </div>
                     <div class="action-wrap mt-3">
-                        <a href="{{route("web-development")}}" class="btn-link text-decoration-none">View Details <span class="fas fa-long-arrow-alt-right"></span></a>
+                        <a href="{{ route('web-development') }}" class="btn-link text-decoration-none">View Details
+                            <span class="fas fa-long-arrow-alt-right"></span></a>
                     </div>
                 </div>
             </div>
@@ -56,7 +61,8 @@
                         <p>Reliable and fast web hosting services to ensure your site stays online.</p>
                     </div>
                     <div class="action-wrap mt-3">
-                        <a href="{{route("website-hosting-solutions")}}" class="btn-link text-decoration-none">View Details <span class="fas fa-long-arrow-alt-right"></span></a>
+                        <a href="{{ route('website-hosting-solutions') }}" class="btn-link text-decoration-none">View
+                            Details <span class="fas fa-long-arrow-alt-right"></span></a>
                     </div>
                 </div>
             </div>
@@ -69,7 +75,8 @@
                         <p>Register and manage your domains with ease and security.</p>
                     </div>
                     <div class="action-wrap mt-3">
-                        <a href="{{route("domain-registration")}}" class="btn-link text-decoration-none">View Details <span class="fas fa-long-arrow-alt-right"></span></a>
+                        <a href="{{ route('domain-registration') }}" class="btn-link text-decoration-none">View Details
+                            <span class="fas fa-long-arrow-alt-right"></span></a>
                     </div>
                 </div>
             </div>
@@ -82,7 +89,8 @@
                         <p>Protect your online assets with our advanced security features.</p>
                     </div>
                     <div class="action-wrap mt-3">
-                        <a href="{{route("cyber-security-solutions")}}" class="btn-link text-decoration-none">View Details <span class="fas fa-long-arrow-alt-right"></span></a>
+                        <a href="{{ route('cyber-security-solutions') }}" class="btn-link text-decoration-none">View
+                            Details <span class="fas fa-long-arrow-alt-right"></span></a>
                     </div>
                 </div>
             </div>
@@ -108,7 +116,9 @@
                         <p>Tailored solutions to train your team and test their skills effectively.</p>
                     </div>
                     <div class="action-wrap mt-3">
-                        <a href="{{route("training-and-testing-solutions")}}" class="btn-link text-decoration-none">View Details <span class="fas fa-long-arrow-alt-right"></span></a>
+                        <a href="{{ route('training-and-testing-solutions') }}"
+                            class="btn-link text-decoration-none">View Details <span
+                                class="fas fa-long-arrow-alt-right"></span></a>
                     </div>
                 </div>
             </div>
