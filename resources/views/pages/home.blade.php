@@ -3,7 +3,7 @@
 {{-- === SEO meta for Home === --}}
 @section('title', 'Web Hosting, Domains, Email And Security')
 @section('meta_description', 'EazyJungle builds your online presence: hosting, domains, email, web development and cybersecurity — simple pricing, fast setup and 24/7 support.')
-@section('canonical', config('app.url')) {{-- homepage canonical --}}
+@section('canonical', config('app.url'))
 @section('og_type', 'website')
 @section('og_image', asset('img/logo-color.png')) {{-- fallback: img/og/default.jpg --}}
 

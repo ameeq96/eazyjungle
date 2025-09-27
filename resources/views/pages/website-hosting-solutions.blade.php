@@ -3,9 +3,9 @@
 {{-- === SEO meta for Web Hosting Solutions === --}}
 @section('title', 'Web Hosting Solutions')
 @section('meta_description', 'Why Us: We work with you to understand your needs for web presence. We provide need-based solutions, limitless individual attention, teaching, training and support.')
-@section('canonical', url('/web-hosting-solutions')) {{-- apne actual slug ke mutabiq update kar sakte hain --}}
+@section('canonical', url('/web-hosting-solutions'))
 @section('og_type', 'website')
-@section('og_image', asset('img/og/web-hosting-solutions.jpg')) {{-- fallback: img/og/default.jpg --}}
+@section('og_image', asset('img/og/web-hosting-solutions.jpg'))
 
 @push('structured_data')
 <script type="application/ld+json">

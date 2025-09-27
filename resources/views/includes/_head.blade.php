@@ -3,15 +3,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 @php
-  $siteName   = config('app.name', 'EazyJungle');
-  $siteUrl    = config('app.url', url('/'));
-  $pageTitle  = trim($__env->yieldContent('title')) ?: $siteName;
-  $fullTitle  = $pageTitle === $siteName ? $siteName : "{$pageTitle} | {$siteName}";
-  $desc       = trim($__env->yieldContent('meta_description')) ?: 'Fast, secure & affordable hosting and digital services by EazyJungle. WHMCS-ready, 24/7 support.';
-  $robots     = trim($__env->yieldContent('meta_robots')) ?: 'index,follow';
-  $canonical  = trim($__env->yieldContent('canonical')) ?: url()->current();
-  $ogType     = trim($__env->yieldContent('og_type')) ?: 'website';
-  $ogImage    = trim($__env->yieldContent('og_image')) ?: asset('img/og/default.jpg');
+    $siteName = config('app.name', 'EazyJungle');
+    $siteUrl = config('app.url', url('/'));
+    $pageTitle = trim($__env->yieldContent('title')) ?: $siteName;
+    $fullTitle = $pageTitle === $siteName ? $siteName : "{$pageTitle} | {$siteName}";
+    $desc =
+        trim($__env->yieldContent('meta_description')) ?:
+        'Fast, secure & affordable hosting and digital services by EazyJungle. WHMCS-ready, 24/7 support.';
+    $robots = trim($__env->yieldContent('meta_robots')) ?: 'index,follow';
+    $canonical = trim($__env->yieldContent('canonical')) ?: url()->current();
+    if (str_starts_with($canonical, '/')) {
+        $canonical = rtrim(config('app.url', url('/')), '/') . $canonical;
+    }
+    $canonical = strtok($canonical, '?#');
+    $ogType = trim($__env->yieldContent('og_type')) ?: 'website';
+    $ogImage = trim($__env->yieldContent('og_image')) ?: asset('img/og/default.jpg');
 @endphp
 
 <title>{{ $fullTitle }}</title>
@@ -44,8 +50,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
-  href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
-  rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
 {{-- CSS --}}
 <link rel="stylesheet" href="{{ asset('css/main.css') }}">

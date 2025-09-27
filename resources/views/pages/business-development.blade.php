@@ -5,7 +5,7 @@
 @section('meta_description',
     'You focus on your business and let us focus on the process to activate enablers of your business -
     People - Products - Technology - Systems')
-@section('canonical', config('app.url')) {{-- homepage canonical --}}
+@section('canonical', url('/business-development'))
 @section('og_type', 'website')
 @section('og_image', asset('img/logo-color.png')) {{-- fallback: img/og/default.jpg --}}
 

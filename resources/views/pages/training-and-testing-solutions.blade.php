@@ -3,7 +3,7 @@
 {{-- === SEO meta for Training & Testing Solutions === --}}
 @section('title', 'Training And Testing Solutions')
 @section('meta_description', 'Upskill your team with expert-led training and reliable testing solutions designed to ensure growth, performance, and measurable results.')
-@section('canonical', url('/training-testing-solutions')) {{-- apne actual slug ke mutabiq update kar sakte hain --}}
+@section('canonical', url('/training-and-testing-solutions'))
 @section('og_type', 'website')
 @section('og_image', asset('img/og/training-testing-solutions.jpg')) {{-- fallback: img/og/default.jpg --}}
 
