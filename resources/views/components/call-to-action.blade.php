@@ -1,6 +1,6 @@
 @php
     $title = $title ?? 'Need Some Help?';
-    $description = 'We are not just service providers! We will work with you to understand your needs and build solutions within your budget.Start Now, Book a truly free up to 30 minutes consultation with our technology experts.Services include web design services for small business, small business web design, affordable web design services, and web design and seo (web design certificate), plus managed hosting with inmotion hosting, a2 hosting, siteground hosting, bluehost hosting, and ionos hosting, as well as best reseller hosting, ecommerce hosting solutions, best web hosting for ecommerce, website hosting security, ddos protected vps hosting, ddos protected dedicated server hosting, and disaster recovery hosting.';
+    $description = 'We are not just service providers! We will work with you to understand your needs and build solutions within your budget.<br>Start Now, Book a truly free up to 30 minutes consultation with our technology experts.';
 @endphp
 
 <section class="call-to-action ptb-100 gradient-overly-bottom"

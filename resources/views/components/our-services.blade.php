@@ -5,9 +5,7 @@
                 <div class="section-heading text-center mb-5 mb-sm-5 mb-md-3 mb-lg-3">
                     <h2>We provide solutions for your web presence and propagations</h2>
                     <p class="lead">Our solutions are scalable to your individual or business needs. Let us be your
-                        trusted partners in building need-based solutions for the following but not limited to: We offer
-                        affordable web design services and web design services for small business. Our team specializes
-                        in small business web design and web design and seo (web design certificate).</p>
+                        trusted partners in building need-based solutions for the following but not limited to:</p>
                 </div>
             </div>
         </div>
