@@ -25,7 +25,28 @@
                         <div id="q1" class="accordion-collapse collapse" data-bs-parent="#accordion-one">
                             <div class="card-body">
                                 <p>Web hosting is a service that stores your website files on a server and makes them
-                                    accessible on the internet via a domain name.</p>
+                                    accessible on the internet via a domain name.
+                                    Often times web hosting is confused with several related phrases, concepts or
+                                    services. For example webhosting vs domain where domain registration is a totally
+                                    different process which involves registration of a name for the website. Some other
+                                    commonly used phrases related to webhosting include best ecommerce hosting which
+                                    refers to the hosting of an online business ; cPanel reseller hosting or Plesk
+                                    reseller hosting which refer to the control panels used to manage the web servers,
+                                    clients or resellers of webhosting ; joomla web hosting or worpress webhosting which
+                                    refers to the content management systems used to build website pages for subsequent
+                                    hosting on a web server.
+                                    Depending on the type of website web hosting can be classified into different
+                                    categories. For example, for basic information display to limited or specific
+                                    audience ( i.e. fish doorbell website , joy wedding website , vevor website ,
+                                    swanson vitamins website , jellycat website ) it can be categorized as hosting of
+                                    static websites and can be easily hosted by cheap web histing sites or even free
+                                    website hosting. Contrary to that are very complex websites targeted to very large
+                                    audience and categorized hosting of dynamic and/or interactive websites. Most
+                                    ecommerce websites fall into this category and It requires ecommerce website
+                                    development services ( i.e. shopify website development services ) and finding best
+                                    web hosting for small business or large enterprises. These type of multilayer
+                                    websites need ecommerce website development services by a ecommerce website
+                                    development company.</p>
                             </div>
                         </div>
                     </div>
@@ -226,6 +247,32 @@
                             <div class="card-body">
                                 <p>We implement network-level DDoS mitigation, firewall rules, and optional WAF (web
                                     application firewall) for application-layer protection.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q17 -->
+                    <div class="card mb-0">
+                        <a class="card-header collapsed" data-bs-toggle="collapse" data-bs-target="#q17">
+                            <h6 class="mb-0 d-inline-block">16. What is the avantage of choosing Eazyjungle for Web
+                                Hosting?</h6>
+                        </a>
+                        <div id="q17" class="accordion-collapse collapse" data-bs-parent="#accordion-one">
+                            <div class="card-body">
+                                <p>Today’s cyberspace is swarmed with thousands of service providers around the globe
+                                    offering all kind of website design and hosting solutions. It is a logical question
+                                    for businesses and individuals that why should they choose Eazyjungle with a small
+                                    footprint as compared to providers with a big footprint and established names in the
+                                    industry such as Inmotion hosting, A2 hosting, SiteGround hosting, Bluehost hosting,
+                                    Ionos Hosting, all well reputed for providing reliable and scalable solutions? The
+                                    answer is that Eazyjungle is not just a service provider, it is a platform for
+                                    teaching and training our clients to acquire solutions based on their unique needs
+                                    and limited budgets. We do not offer complex plans where you feel limited to fit
+                                    your budget into set of services, rather we tailer and optimize the packages for
+                                    best website design, domain management, ecommerce hosting solutions, shared hosting,
+                                    VPS hosting, dedicated servers for reseller hosting, website security, all within or
+                                    below your budget. Besides, we will work with you to develop your business model,
+                                    and implement best SEO tools to promote your business.</p>
                             </div>
                         </div>
                     </div>
