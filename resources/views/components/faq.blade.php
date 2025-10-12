@@ -39,7 +39,7 @@
                                     categories. For example, for basic information display to limited or specific
                                     audience ( i.e. fish doorbell website , joy wedding website , vevor website ,
                                     swanson vitamins website , jellycat website ) it can be categorized as hosting of
-                                    static websites and can be easily hosted by cheap web histing sites or even free
+                                    static websites and can be easily hosted by cheap web hosting sites or even free
                                     website hosting. Contrary to that are very complex websites targeted to very large
                                     audience and categorized hosting of dynamic and/or interactive websites. Most
                                     ecommerce websites fall into this category and It requires ecommerce website
